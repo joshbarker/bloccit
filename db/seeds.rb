@@ -27,6 +27,8 @@ Post.create!(
      body: Faker::Lorem.paragraph
    )
  end
+
+
  
  
  puts "Seed finished"
