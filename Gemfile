@@ -13,6 +13,7 @@ group :production do
  
  group :development do
    gem 'sqlite3'
+   gem "rails-erd"
  end
 
 gem 'sass-rails', '~> 5.0'
