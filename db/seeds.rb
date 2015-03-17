@@ -9,6 +9,17 @@
  end
  posts = Post.all
  
+# Unique Post
+Post.create!(
+  title: "Unique Post",
+  body: "Unique body"
+)
+
+Post.create!(
+  title: "Unique Post2",
+  body: "Unique body2"
+)
+
  # Create Comments
  100.times do
    Comment.create!(
@@ -16,6 +27,7 @@
      body: Faker::Lorem.paragraph
    )
  end
+ 
  
  puts "Seed finished"
  puts "#{Post.count} posts created"
