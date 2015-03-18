@@ -38,6 +38,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Twitter Bootstrap
 gem 'bootstrap-sass'
+# Devise Authentication System
+gem 'devise'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
