@@ -40,6 +40,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass'
 # Devise Authentication System
 gem 'devise'
+# Authorizes different users to different tasks in the app
+gem 'pundit'
 
 # Handles sensitve data with environment variables
 gem 'figaro', '1.0'
