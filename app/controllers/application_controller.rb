@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
 
   def flash_attack
     if ApplicationController
-      flash[:notice] = "Flash Attack All"
+      flash[:notice] = "Flash Attack"
     end
   end
 
