@@ -42,7 +42,6 @@ gem 'bootstrap-sass'
 gem 'devise'
 # Authorizes different users to different tasks in the app
 gem 'pundit'
-
 # Handles sensitve data with environment variables
 gem 'figaro', '1.0'
 
