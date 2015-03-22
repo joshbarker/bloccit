@@ -1,4 +1,3 @@
-== README
 
 ## Bloccit: a Reddit replica to teach the fundamentals of web development and Rails.
 
@@ -31,3 +30,7 @@ Things you may want to cover:
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+=======
+# bloccit
+building a version of Reddit
+>>>>>>> 306eef46ab273f0a0fc930f0e027200a3b1660a6
