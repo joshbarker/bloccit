@@ -46,6 +46,12 @@ gem 'pundit'
 gem 'figaro', '1.0'
 # Allows Markdown in Posts
 gem 'redcarpet'
+# Delivers Image to AWS
+gem 'carrierwave'
+# Image Uploading 
+gem 'mini_magick'
+# Supports Amazon S3 
+gem 'fog'
 
 
 # Use ActiveModel has_secure_password
