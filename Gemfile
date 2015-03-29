@@ -52,6 +52,8 @@ gem 'carrierwave'
 gem 'mini_magick'
 # Supports Amazon S3 
 gem 'fog'
+# Pagination of Topics
+gem 'will_paginate'
 
 
 # Use ActiveModel has_secure_password
