@@ -34,12 +34,13 @@ ActiveRecord::Schema.define(version: 20150411015203) do
 
   create_table "favorites", force: :cascade do |t|
     t.integer  "post_id"
-    t.string   "user"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   add_index "favorites", ["post_id"], name: "index_favorites_on_post_id"
+  add_index "favorites", ["user_id"], name: "index_favorites_on_user_id"
 
   create_table "posts", force: :cascade do |t|
     t.string   "title"
