@@ -12,7 +12,8 @@ class TopicsController < ApplicationController
   def show
     @topic = Topic.find(params[:id])
     authorize @topic
-    @posts = @topic.posts.includes(:user).includes(:comments).paginate(page: params[:page], per_page: 10)
+    # @posts = @topic.posts.includes(:user).includes(:comments).paginate(page: params[:page], per_page: 10)
+    @posts = @topic.posts.paginate(page: params[:page], per_page: 10)
   end
 
   def edit
@@ -21,7 +22,7 @@ class TopicsController < ApplicationController
   end
 
   def create
-    @topic = Topic.new(params.require(:topic).permit(:name, :description, :public))
+    topic = Topic.new(params.require(:topic).permit(:name, :description, :public))
     authorize @topic
     if @topic.save
       redirect_to @topic, notice: "Topic was saved successfully."
