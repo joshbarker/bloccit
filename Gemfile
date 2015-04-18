@@ -80,5 +80,8 @@ group :development, :test do
   #Rspec
   gem 'rspec-rails'
 
+  #Capybara for testing
+  gem 'capybara'
+
 end
 

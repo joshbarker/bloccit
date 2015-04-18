@@ -6,6 +6,6 @@ class Topic < ActiveRecord::Base
   scope :publicly_viewable, -> { where(public: true) }
   scope :privately_viewable, -> { where(public: false) }
 
-  scope :visible_to, -> (user) { user ? all : public }
+  scope :visible_to, -> (user) { user ? all : where(public: true) }
 
 end
