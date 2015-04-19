@@ -7,9 +7,9 @@
    describe "after_create" do
  
      before do
-       @post = associated_post
-       @user = authenticated_user(email_favorites: true)
-       @comment = Comment.new(body: 'My comment is really great', post: @post, user_id: 10000)
+       @post = create(:post)
+       @user = create(:user)
+       @comment = create(:comment, post: @post, user_id: 10000)
      end
  
      context "with user's permission" do

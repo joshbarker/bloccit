@@ -83,5 +83,8 @@ group :development, :test do
   #Capybara for testing
   gem 'capybara'
 
+  #Factory Inheritance Testing
+  gem 'factory_girl_rails'
+
 end
 
