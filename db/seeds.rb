@@ -81,7 +81,7 @@ end
    password: 'helloworld'
  )
  member.skip_confirmation!
- member.save
+ member.save!
 
 puts "Seed finished"
 puts "#{User.count} users created"
