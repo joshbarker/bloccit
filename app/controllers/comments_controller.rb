@@ -1,6 +1,6 @@
 class CommentsController < ApplicationController
 
-  respond_to :html
+  respond_to :html, :js
 
   def create
     @post = Post.find(params[:post_id])
@@ -24,7 +24,6 @@ class CommentsController < ApplicationController
   def destroy
     @post = Post.find(params[:post_id])
     @comment = @post.comments.find(params[:id])
-
     authorize @comment
     
     if @comment.destroy
@@ -35,7 +34,7 @@ class CommentsController < ApplicationController
 
     respond_to do |format|
       format.html
-      # format.js
+      format.js
     end
   end
 
