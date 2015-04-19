@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150411015203) do
+ActiveRecord::Schema.define(version: 20150419000455) do
 
   create_table "avertisements", force: :cascade do |t|
     t.string   "title"
@@ -50,6 +50,7 @@ ActiveRecord::Schema.define(version: 20150411015203) do
     t.integer  "user_id"
     t.integer  "topic_id"
     t.float    "rank"
+    t.string   "image"
   end
 
   add_index "posts", ["topic_id"], name: "index_posts_on_topic_id"
